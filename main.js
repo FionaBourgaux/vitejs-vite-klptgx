@@ -24,9 +24,9 @@ const listearticles = () => {
 
     let articleCard = `
       <a class="card col-5 col-md-3" href="/article/?id=${article.id}">
-        <img src="${imgUrl}" crossorigin class="card-img-top" alt="avatar de ${article.prenom} ${article.nom}">
+        <img src="${imgUrl}" crossorigin class="card-img-top" alt="avatar de ${article.contenue} ${article.contenue}">
         <div class="card-body">
-          <h5 class="card-title">${article.prenom} ${article.nom}</h5>
+          <h5 class="card-title">${article.titre} ${article.contenue}</h5>
         </div>
       </a>
     `;

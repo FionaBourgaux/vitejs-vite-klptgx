@@ -19,14 +19,13 @@ const listearticles = () => {
     const article = articles[i];
 
     // url de l'image
-    const imgUrl = new URL(import.meta.env.VITE_API_URL);
-    imgUrl.pathname = article.avatar;
+    const imgUrl = article.avatar;
 
     let articleCard = `
       <a class="card col-5 col-md-3" href="/article/?id=${article.id}">
-        <img src="${imgUrl}" crossorigin class="card-img-top" alt="avatar de ${article.contenue} ${article.contenue}">
+        <img src="${imgUrl}" crossorigin class="card-img-top" alt="avatar de ${article.titre} ${article.contenue}">
         <div class="card-body">
-          <h5 class="card-title">${article.titre} ${article.contenue}</h5>
+          <h5 class="card-title">${article.titre} </h5>
         </div>
       </a>
     `;
